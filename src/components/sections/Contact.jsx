@@ -2,8 +2,9 @@ function Contact() {
 
 
     return (
-        <div>
-        </div>
+        <section id="contact" className="h-screen flex items-center justify-center bg-gray-100">
+            <h2 className="text-4xl font-bold">Contact Me</h2>
+        </section>
     )
 }
 

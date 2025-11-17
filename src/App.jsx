@@ -1,14 +1,25 @@
-
+import Navbar from "./components/layout/Navbar"
+import Hero from "./components/sections/Hero"
+import About from "./components/sections/About"
+import Services from "./components/sections/Services"
+import Portfolio from "./components/sections/Portfolio"
+import Contact from "./components/sections/Contact"
 
 function App() {
 
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-900">
-      <h1 className="text-4xl font-bold text-blue-400">
-        Tailwind is Working! 🎉
-      </h1>
-    </div>
+    <>
+      <Navbar />
+
+
+      <Hero />
+      <About />
+      <Services />
+      <Portfolio />
+      <Contact />
+
+    </>
   )
 }
 
