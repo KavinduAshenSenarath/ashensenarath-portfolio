@@ -1,40 +1,42 @@
 import { Link } from "react-scroll";
+import { Sling as Hamburger } from 'hamburger-react';
+import React, { useState } from "react";
 
 function Navbar() {
+    const [isOpen, setOpen] = useState(false);
     return (
+        <div>
+            < nav className=" fixed w-full  top-0 left-0 z-50 bg-[#151925] px-4 py-4 flex justify-between items-center" >
+                <img src='logo-m.svg' alt='logo' className='w-20 h-20 top-0 cursor-pointer' />
+                <Hamburger
+                    toggled={isOpen}
+                    toggle={setOpen}
+                    color='#ffffff'
+                    size={25}
+                />
+            </nav >
 
-        <nav className="fixed top-0 left-0 w-full bg-white shadow-md z-50">
-            <div className="max-w-7xl mx-auto flex justify-between items-center p-4">
-
-                <h1 className='text-xl font-bold text-blue-600'>My portfolio</h1>
-                <div classname='space-x-6'>
-                    <Link to="hero" smoth={true} duration={500} offset={-80} className="cursor-pointer hover:text-blue-600">
+            {isOpen && (
+                <div className="fixed top-16 right-4 text-center bg-[#1c2030] text-white rounded-lg shadow-lg py-4 px-6 flex flex-col gap-4  mt-2 w-50 z-70">
+                    <a href="#home" onClick={() => setOpen(false)} className="text-base hover:text-[#5254D8]">
                         Home
-                    </Link>
-                    <Link to="about" smooth={true} duration={500} offset={-80}
-                        className="cursor-pointer hover:text-blue-600">
+                    </a>
+                    <a href="#about" onClick={() => setOpen(false)} className="text-base hover:text-[#5254D8]">
                         About
-                    </Link>
-
-                    <Link to="services" smooth={true} duration={500} offset={-80}
-                        className="cursor-pointer hover:text-blue-600">
+                    </a>
+                    <a href="#services" onClick={() => setOpen(false)} className="text-base hover:text-[#5254D8]">
                         Services
-                    </Link>
-
-                    <Link to="portfolio" smooth={true} duration={500} offset={-80}
-                        className="cursor-pointer hover:text-blue-600">
+                    </a>
+                    <a href="#portfolio" onClick={() => setOpen(false)} className="text-base hover:text-[#5254D8]">
                         Portfolio
-                    </Link>
-
-                    <Link to="contact" smooth={true} duration={500} offset={-80}
-                        className="cursor-pointer hover:text-blue-600">
+                    </a>
+                    <a href="#contact" onClick={() => setOpen(false)} className="text-base hover:text-[#5254D8]">
                         Contact
-                    </Link>
+                    </a>
                 </div>
-            </div>
-        </nav>
+            )}
 
 
-
+        </div>
     )
 } export default Navbar;
