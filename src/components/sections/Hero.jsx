@@ -1,5 +1,7 @@
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
+import { Github, Linkedin, Twitter } from "lucide-react";
+import SocialIcon from "../../assets/SocialIcon";
 
 function Hero() {
     const texts = [
@@ -49,7 +51,7 @@ function Hero() {
                 alt="Profile"
                 className="w-64 z-10 absolute pb-50"
             />
-            <div className="text-center z-10 mt-80 text-white">
+            <div className="text-center z-10 mt-100 text-white">
                 <p className='text-sm mb-2'>Hello it's Me</p>
 
                 <h1 className="text-3xl font-bold mb-1">
@@ -65,6 +67,11 @@ function Hero() {
                     className="px-6 py-2 border border-indigo-500 rounded-full text-white hover:bg-indigo-600 hover:text-white transition">
                     Download CV
                 </motion.button>
+                <div className="flex justify-center gap-4 mt-4">
+                    <SocialIcon icon={<Github />} />
+                    <SocialIcon icon={<Linkedin />} />
+                    <SocialIcon icon={<Twitter />} />
+                </div>
             </div>
         </section>
     );
