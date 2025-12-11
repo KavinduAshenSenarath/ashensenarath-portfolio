@@ -10,24 +10,26 @@ function About() {
     };
 
     return (
-        <section id="about" className="min-h-screen py-10 bg-[#151925]">
+        <section id="about" className=" py-10 bg-[#151925]">
             <h2 className="text-center text-2xl font-bold text-white">
                 About <span className="text-indigo-400">Me</span>
             </h2>
 
-            <h1 className="text-center text-white text-3xl font-serif font-semibold mt-1">
+            <h1 className="text-center text-white text-3xl font-serif font-semibold mt-3">
                 Get to Know Me Better
             </h1>
 
             <div className="space-y-4 mt-8 px-4 md:px-20">
 
-                {/* -------------------- EXPERIENCE -------------------- */}
+                {/*EXPERIENCE*/}
                 <div className="bg-gray-900 rounded-2xl overflow-hidden border border-gray-800">
                     <button
                         onClick={() => toggle("experience")}
-                        className="w-full flex items-center justify-between p-5 hover:bg-gray-800/50 transition-all duration-300"
-                    >
-                        <h3 className="text-lg font-semibold text-white">Work Experience</h3>
+                        className="w-full flex items-center justify-between p-5 hover:bg-gray-800/50 transition-all duration-300">
+                        <div className="flex items-center gap-3">
+                            <img src="work.svg" alt="work icon " className="h-8 w-8  "></img>
+                            <h3 className="text-lg font-semibold text-white ">Work Experience</h3>
+                        </div>
 
                         <ChevronRight
                             className={`transition-transform duration-300 text-indigo-400 ${expanded === "experience" ? "rotate-90" : ""
@@ -61,14 +63,14 @@ function About() {
                     </div>
                 </div>
 
-                {/* -------------------- SKILLS -------------------- */}
+                {/*SKILLS*/}
                 <div className="bg-gray-900 rounded-2xl overflow-hidden border border-gray-800">
                     <button
                         onClick={() => toggle("skills")}
                         className="w-full flex items-center justify-between p-5 hover:bg-gray-800/50 transition-all duration-300"
                     >
                         <div className="flex items-center gap-3">
-                            <span className="text-2xl">⚡</span>
+                            <img src="bulb.svg" alt="bulb icon " className="w-10 h-10" />
                             <h3 className="text-lg font-semibold text-white">Technical Skills</h3>
                         </div>
 
@@ -83,14 +85,14 @@ function About() {
                         className={`transition-all duration-300 overflow-hidden ${expanded === "skills" ? "max-h-[1000px] opacity-100" : "max-h-0 opacity-0"
                             }`}
                     >
-                        <div className="p-5 pt-0 border-t border-gray-800 space-y-3">
+                        <div className="p-5 pt-0 border-t border-gray-800 text-white space-y-3">
 
                             {[
                                 { skill: "React & Node.js", value: 92 },
-                                { skill: "JavaScript / TypeScript", value: 88 },
+                                { skill: "JavaScript", value: 88 },
                                 { skill: "MongoDB & SQL", value: 85 },
                                 { skill: "UI/UX Design", value: 78 },
-                                { skill: "DevOps & CI/CD", value: 75 },
+                                { skill: "Express", value: 75 },
                             ].map((item, index) => (
                                 <div key={index}>
                                     <div className="flex justify-between mb-2">
@@ -111,14 +113,14 @@ function About() {
                     </div>
                 </div>
 
-                {/* -------------------- EDUCATION -------------------- */}
+                {/*EDUCATION*/}
                 <div className="bg-gray-900 rounded-2xl overflow-hidden border border-gray-800">
                     <button
                         onClick={() => toggle("education")}
                         className="w-full flex items-center justify-between p-5 hover:bg-gray-800/50 transition-all duration-300"
                     >
                         <div className="flex items-center gap-3">
-                            <span className="text-2xl">🎓</span>
+                            <img src="education.svg" alt="education icon " className=" w-10 h-10" />
                             <h3 className="text-lg font-semibold text-white">Education</h3>
                         </div>
 
@@ -136,13 +138,13 @@ function About() {
                     >
                         <div className="p-5 pt-0 border-t border-gray-800 space-y-4">
                             <div className="border-l-2 border-blue-500 pl-4">
-                                <h4 className="font-semibold">Bachelor of Computer Science</h4>
-                                <p className="text-blue-400 text-sm mb-1">University Name</p>
-                                <p className="text-gray-400 text-xs">2018 - 2022</p>
+                                <h4 className="font-semibold text-white">Information and Communication Technology </h4>
+                                <p className="text-blue-400 text-sm mb-1">Uva Wellassa University of Srilanka </p>
+                                <p className="text-gray-400 text-xs">2023-2027</p>
                             </div>
 
                             <div className="border-l-2 border-purple-500 pl-4">
-                                <h4 className="font-semibold">Full Stack Web Development</h4>
+                                <h4 className="font-semibold text-white">Full Stack Web Development</h4>
                                 <p className="text-purple-400 text-sm mb-1">Online Bootcamp</p>
                                 <p className="text-gray-400 text-xs">2021</p>
                             </div>
