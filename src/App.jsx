@@ -4,6 +4,7 @@ import About from "./components/sections/About"
 import Services from "./components/sections/Services"
 import Projects from "./components/sections/Projects"
 import Contact from "./components/sections/Contact"
+import Skillbar from "./components/sections/Skillbar"
 
 function App() {
 
@@ -17,7 +18,9 @@ function App() {
       <About />
       <Services />
       <Projects />
+      <Skillbar />
       <Contact />
+
 
     </>
   )

@@ -6,8 +6,8 @@ function Navbar() {
     const [isOpen, setOpen] = useState(false);
     return (
         <div>
-            < nav className=" fixed w-full  top-0 left-0 z-50 bg-[#151925] px-4 py-4 flex justify-between items-center" >
-                <img src='logo-m.svg' alt='logo' className='w-20 h-20 top-0 cursor-pointer' />
+            < nav className=" fixed w-full  top-0 left-0 z-50 bg-[#151925] px-4 flex justify-between items-center" >
+                <img src='logo-m.svg' alt='logo' className='w-17 h-17 top-0 cursor-pointer' />
                 <Hamburger
                     toggled={isOpen}
                     toggle={setOpen}

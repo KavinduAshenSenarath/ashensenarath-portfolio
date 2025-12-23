@@ -8,7 +8,15 @@ function Projects() {
             title: "UWU Medical Web App",
             Discription:
                 "This MERN-based Medical Request System digitalizes student medical services at Uva Wellassa University. I contributed by integrating the frontend with backend APIs and building UI features for profiles, prescriptions, and request updates to make the system simple and efficient."
+        },
+        {
+            id: 2,
+            image: "medical-app.png",
+            title: "UWU Medical Web App",
+            Discription:
+                "This MERN-based Medical Request System digitalizes student medical services at Uva Wellassa University. I contributed by integrating the frontend with backend APIs and building UI features for profiles, prescriptions, and request updates to make the system simple and efficient."
         }
+
     ];
 
     return (
