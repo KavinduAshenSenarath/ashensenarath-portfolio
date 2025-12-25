@@ -3,11 +3,34 @@ import { useState, useEffect } from "react";
 import { Github, Linkedin, Twitter } from "lucide-react";
 import SocialIcon from "../../assets/SocialIcon";
 
+
 function Hero() {
     const texts = [
         "Front-End Developer",
         "UI/UX Developer",
         "Back-End Developer",
+        "Data Analyst",
+        "Business Intelligence Analyst",
+        "ML Engineer"
+    ];
+
+    const floatingAnimation = {
+        animate: {
+            y: [0, -15, 0],
+            rotate: [0, 10, -10, 0]
+        },
+        transition: {
+            duration: 4,
+            repeat: Infinity,
+            ease: "easeInOut",
+        },
+    };
+
+    const techIcons = [
+        { src: "pythonlogo.svg", top: "20%", left: "17%", },
+        { src: "javalogo.svg", top: "80%", left: "17%" },
+        { src: "powerbilogo.svg", top: "30%", left: "60%" },
+        { src: "reactlogo.svg", top: "95%", left: "70%" },
     ];
 
     const [text, setText] = useState("");
@@ -56,8 +79,7 @@ function Hero() {
                     </h2>
 
                     <p className="text-gray-400 mb-6 lg:text-2xl">
-                        I design and build modern, responsive, and user-friendly web
-                        applications using React and modern frontend technologies.
+                        Aspiring Business Intelligence Intern skilled in Power BI, Excel, and SQL, focused on turning data into insights. And foundation in MERN stack development.
                     </p>
 
                     <motion.button
@@ -83,11 +105,31 @@ function Hero() {
                         transition={{ duration: 1.2, ease: "easeOut" }}
                         className="absolute w-60 h-30 lg:w-95 lg:h-40 lg:mt-47 lg:rounded-full lg:rorate-20   bg-indigo-600 rounded-full rotate-20 z-0 mt-30 mb-50"
                     />
+                    {/*Tech icons  */}
+                    {techIcons.map((icon, index) => (
+                        < motion.div
+                            key={index}
+                            className="absolute w-12 h-12 lg:w-14 lg:h-14 bg-[#1e2337] rounded-full flex items-center justify-center shadow-lg "
+                            style={{
+                                top: icon.top,
+                                left: icon.left,
+                                right: icon.right,
+                                bottom: icon.bottom,
+                            }}
+                            animate={floatingAnimation.animate}
+                            transition={{
+                                ...floatingAnimation.transition,
+                                delay: index * 0.3,
+                            }}
+                        >
+                            <img src={icon.src} alt="tech" className="w-6 lg:w-8" />
+                        </motion.div>
+                    ))}
 
                     <img
                         src="/profic-m.png"
                         alt="Profile"
-                        className="w-64 lg:w-100 z-10"
+                        className="w-64 lg:w-100 lg:mt-0 z-10 mt-10"
                     />
                 </div>
             </div>

@@ -7,7 +7,7 @@ function Navbar() {
     return (
         <div>
             < nav className=" fixed w-full  top-0 left-0 z-50 bg-[#151925] px-4 flex justify-between items-center" >
-                <img src='logo-m.svg' alt='logo' className='w-17 h-17 top-0 cursor-pointer' />
+                <img src='logo-m.svg' alt='logo' className='w-15 h-15 top-0 cursor-pointer' />
                 <Hamburger
                     toggled={isOpen}
                     toggle={setOpen}
