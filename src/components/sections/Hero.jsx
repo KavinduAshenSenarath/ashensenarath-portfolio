@@ -103,7 +103,7 @@ function Hero() {
                         initial={{ scale: 0, rotate: -30, opacity: 0 }}
                         animate={{ scale: 1, rotate: 0, opacity: 1 }}
                         transition={{ duration: 1.2, ease: "easeOut" }}
-                        className="absolute w-60 h-30 lg:w-95 lg:h-40 lg:mt-47 lg:rounded-full lg:rorate-20   bg-indigo-600 rounded-full rotate-20 z-0 mt-30 mb-50"
+                        className="absolute w-60 h-30 lg:w-95 lg:h-40 lg:mt-47 lg:rounded-full lg:rorate-20   bg-indigo-600 rounded-full rotate-20 z-0 mt-37 mb-50"
                     />
                     {/*Tech icons  */}
                     {techIcons.map((icon, index) => (

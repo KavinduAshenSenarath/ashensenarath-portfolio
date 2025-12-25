@@ -57,6 +57,9 @@ function Projects() {
                         <p className="text-white text-[15px] text-center m-2">
                             {project.Discription}
                         </p>
+                        <button className="mb-8 mt-5 bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-full text-sm font-medium transition-colors duration-300">
+                            Read More
+                        </button>
                     </motion.div>
                 ))}
             </div>
