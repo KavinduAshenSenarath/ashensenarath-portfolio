@@ -76,7 +76,7 @@ function Technologies() {
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true }}
-                className="max-w-6xl mx-auto bg-[#323846] rounded-2xl p-8 border border-purple-400/30 shadow-[0_0_15px_rgba(168,85,247,0.3)]"
+                className="max-w-6xl mx-auto bg-[#323846] rounded-2xl p-8 border border-purple-400/30 shadow-[0_0_15px_rgba(168,85,247,0.3) lg:bg-transparent lg:rounded-none lg:p-0 lg:border-none lg:shadow-none"
             >
                 <div className="flex flex-wrap justify-center gap-8">
                     {TECHNOLOGIES.map((tech, index) => (
@@ -103,7 +103,7 @@ function Technologies() {
                             />
 
                             <motion.div
-                                className="w-15 h-15 bg-[#1e2330] rounded-xl p-4 border-2 flex items-center justify-center"
+                                className="w-15 h-15 lg:w-20 lg:h-20 bg-[#1e2330] rounded-xl p-4 border-2 flex items-center justify-center"
                                 style={{
                                     borderColor: hoveredIndex === index ? tech.color : 'transparent'
                                 }}
@@ -124,7 +124,7 @@ function Technologies() {
                             </motion.div>
 
                             <motion.span
-                                className="mt-3 text-base font-semibold text-center"
+                                className="mt-3 text-sm lg:text-base font-semibold text-center"
                                 animate={{
                                     color: hoveredIndex === index ? tech.color : '#ffffff',
                                     scale: hoveredIndex === index ? 1.05 : 1

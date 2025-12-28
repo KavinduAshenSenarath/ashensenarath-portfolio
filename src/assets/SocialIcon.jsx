@@ -8,7 +8,7 @@ function SocialIcon({ icon }) {
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.3 }}
-            className="p-2 rounded-full bg-gray-700 hover:bg-indigo-500 transition"
+            className="p-2 lg:p-4 rounded-full bg-gray-700 hover:bg-indigo-500 transition lg:text-4xl"
         >
             {icon}
         </motion.a>

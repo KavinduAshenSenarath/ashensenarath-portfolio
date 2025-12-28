@@ -27,10 +27,22 @@ function Hero() {
     };
 
     const techIcons = [
-        { src: "pythonlogo.svg", top: "20%", left: "17%", },
-        { src: "javalogo.svg", top: "80%", left: "17%" },
-        { src: "powerbilogo.svg", top: "30%", left: "60%" },
-        { src: "reactlogo.svg", top: "95%", left: "70%" },
+        {
+            src: "pythonlogo.svg",
+            className: "top-[22%] left-[25%] lg:top-[18%] lg:left-[40%]"
+        },
+        {
+            src: "javalogo.svg",
+            className: "top-[85%] left-[17%] lg:top-[80%] lg:left-[28%]"
+        },
+        {
+            src: "powerbilogo.svg",
+            className: "top-[33%] left-[58%] lg:top-[27%] lg:left-[75%] "
+        },
+        {
+            src: "reactlogo.svg",
+            className: "top-[95%] left-[70%] lg:top-[95%] lg:left-[85%]"
+        },
     ];
 
     const [text, setText] = useState("");
@@ -59,7 +71,7 @@ function Hero() {
     }, [subIndex, deleting, index]);
 
     return (
-        <section className="min-h-screen bg-[#151925] flex items-center px-6 lg:px-40">
+        <section id="Home" className="min-h-screen bg-[#151925] flex items-center px-6 lg:px-40">
             <div className="w-full flex flex-col-reverse lg:flex-row items-center justify-between gap-14">
 
                 {/* LEFT SIDE - TEXT */}
@@ -109,13 +121,7 @@ function Hero() {
                     {techIcons.map((icon, index) => (
                         < motion.div
                             key={index}
-                            className="absolute w-12 h-12 lg:w-14 lg:h-14 bg-[#1e2337] rounded-full flex items-center justify-center shadow-lg "
-                            style={{
-                                top: icon.top,
-                                left: icon.left,
-                                right: icon.right,
-                                bottom: icon.bottom,
-                            }}
+                            className={`absolute ${icon.className} w-12 h-12 lg:w-14 lg:h-14 bg-[#1e2337] rounded-full flex items-center justify-center shadow-lg `}
                             animate={floatingAnimation.animate}
                             transition={{
                                 ...floatingAnimation.transition,

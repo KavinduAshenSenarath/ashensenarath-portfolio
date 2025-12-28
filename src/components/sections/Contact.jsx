@@ -57,28 +57,28 @@ function Contact() {
     };
 
     const inputClass =
-        "w-full bg-[#323846] rounded-3xl text-gray-300 placeholder-gray-500 px-5 py-4 border-none focus:outline-none";
+        "w-full bg-[#323846] rounded-3xl text-gray-300 placeholder-gray-500 px-5 py-4 border-none focus:outline-none lg:text-lg";
 
     return (
         <section
-            id="contact"
+            id="Contact"
             className="min-h-screen bg-[#151925] px-4 sm:px-8 md:px-16 py-24 flex items-center justify-center"
         >
             <motion.div
-                className="w-full max-w-3xl bg-[#1a1f2e] rounded-3xl p-6 sm:p-10"
+                className="w-full max-w-5xl bg-[#1a1f2e] lg:bg-transparent rounded-3xl lg:rounded-none lg:p-0 lg:border-none p-6 sm:p-10"
                 variants={containerVariants}
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true }}
             >
                 <motion.h2
-                    className="text-white text-2xl font-bold text-center mb-10"
+                    className="text-white text-2xl lg:text-4xl font-bold text-center mb-12"
                     variants={itemVariants}
                 >
                     Contact <span className="text-indigo-400">Me</span>
                 </motion.h2>
 
-                <form onSubmit={handleSubmit} className="space-y-6">
+                <form onSubmit={handleSubmit} className="space-y-6 max-w-4xl mx-auto">
                     {/* Name */}
                     <motion.div
                         className="grid grid-cols-1 md:grid-cols-2 gap-4"

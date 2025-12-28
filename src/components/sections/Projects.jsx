@@ -15,17 +15,24 @@ function Projects() {
             title: "UWU Medical Web App",
             Discription:
                 "This MERN-based Medical Request System digitalizes student medical services at Uva Wellassa University. I contributed by integrating the frontend with backend APIs and building UI features for profiles, prescriptions, and request updates to make the system simple and efficient."
+        },
+        {
+            id: 3,
+            image: "medical-app.png",
+            title: "UWU Medical Web App",
+            Discription:
+                "This MERN-based Medical Request System digitalizes student medical services at Uva Wellassa University. I contributed by integrating the frontend with backend APIs and building UI features for profiles, prescriptions, and request updates to make the system simple and efficient."
         }
 
     ];
 
     return (
-        <section id="portfolio" className="min-h-screen bg-[#151925] py-10">
-            <h2 className="text-white text-2xl text-center font-bold">
+        <section id="Projects" className="min-h-screen bg-[#151925] py-10">
+            <h2 className="text-white text-2xl text-center font-bold lg:text-4xl mb-12">
                 My <span className="text-indigo-400">Projects</span>
             </h2>
 
-            <div className="space-y-6">
+            <div className="grid gap-3 lg:grid-cols-2 xl:grid-cols-3 max-w-7xl mx-auto px-4">
                 {projects.map((project) => (
                     <motion.div
                         key={project.id}

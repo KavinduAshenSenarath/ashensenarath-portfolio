@@ -10,7 +10,7 @@ function About() {
     };
 
     return (
-        <section id="about" className=" py-10 bg-[#151925]">
+        <section id="About" className=" py-10 bg-[#151925]">
             <h2 className="text-center text-2xl font-bold text-white lg:text-4xl">
                 About <span className="text-indigo-400">Me</span>
             </h2>
