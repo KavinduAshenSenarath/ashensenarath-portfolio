@@ -1,4 +1,4 @@
-import { Link } from "react-scroll";
+
 import { Sling as Hamburger } from 'hamburger-react';
 import React, { useState } from "react";
 
