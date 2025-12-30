@@ -1,5 +1,4 @@
 
-import { Link } from "react-router-dom";
 import { Github, Linkedin, Twitter } from "lucide-react";
 import SocialIcon from "../../assets/SocialIcon";
 
@@ -54,7 +53,7 @@ export default function Footer() {
                 <div className="space-y-4">
                     <h2 className="text-white text-lg font-semibold">Follow Me</h2>
 
-                    <div className="flex gap-4 lg:gap-6">
+                    <div className="flex gap-4 lg:gap-5">
                         <SocialIcon icon={<Github />} />
                         <SocialIcon icon={<Linkedin />} />
                         <SocialIcon icon={<Twitter />} />
@@ -66,7 +65,7 @@ export default function Footer() {
 
             <div className="border-t border-slate-800 mt-10 pt-6 text-center">
                 <p className="text-sm lg:text-base">
-                    © {currentYear} Ashen Senarath. All rights reserved.
+                    &copy; {currentYear} Ashen Senarath. All rights reserved.
                 </p>
             </div>
         </footer>

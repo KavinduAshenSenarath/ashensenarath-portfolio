@@ -9,7 +9,7 @@ function Navbar() {
             < nav className=" fixed w-full  top-0 left-0 z-50 bg-[#151925] px-6 lg:px-16  flex justify-between items-center" >
 
                 {/* logo image  */}
-                <img src='logo-m.svg' alt='logo' className='w-15 h-15 top-0 cursor-pointer ' />
+                <a href='#Home'><img src='logo-m.svg' alt='logo' className='w-15 h-15 top-0 cursor-pointer ' /></a>
 
                 {/*desktop menu  */}
                 <ul className="hidden lg:flex items-center gap-10 text-white font-medium">
