@@ -11,7 +11,7 @@ export default function Footer() {
             <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10 lg:grid-cols-4 lg:gap-16 ">
 
                 <div className="space-y-4">
-                    <img src="logo-m.svg" alt="logo" className="w-15 h-15 lg:w-16 lg:h-16 " />
+                    <a href="#Home"> <img src="logo-m.svg" alt="logo" className="w-15 h-15 lg:w-16 lg:h-16 cursor-pointer " /></a>
                     <p className="text-sm leading-relaxed lg:text-base">
                         Aspiring BI Intern skilled in Power BI, Excel, and SQL, with a MERN stack foundation.
                     </p>
@@ -55,8 +55,8 @@ export default function Footer() {
 
                     <div className="flex gap-4 lg:gap-5">
                         <SocialIcon icon={<Github />} link="https://github.com/KavinduAshenSenarath" />
-                        <SocialIcon icon={<Linkedin />} link="" />
-                        <SocialIcon icon={<Twitter />} link="" />
+                        <SocialIcon icon={<Linkedin />} link="https://www.linkedin.com/in/kavindu-ashen-senarath-1b3725325" />
+                        <SocialIcon icon={<Twitter />} link="https://www.linkedin.com/in/kavindu-ashen-senarath-1b3725325" />
 
                     </div>
                 </div>
