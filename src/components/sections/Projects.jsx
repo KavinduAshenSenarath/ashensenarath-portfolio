@@ -6,22 +6,25 @@ function Projects() {
             id: 1,
             image: "medical-app.png",
             title: "UWU Medical Web App",
+            link: "https://github.com/LaKrUwaNS/UWU_Medical",
             Discription:
                 "This MERN-based Medical Request System digitalizes student medical services at Uva Wellassa University. I contributed by integrating the frontend with backend APIs and building UI features for profiles, prescriptions, and request updates to make the system simple and efficient."
         },
         {
             id: 2,
-            image: "medical-app.png",
-            title: "UWU Medical Web App",
+            image: "ictforyou.png",
+            title: "ICT 4 YOU Learning Platform",
+            link: "https://github.com/KavinduAshenSenarath/IctForYou",
             Discription:
-                "This MERN-based Medical Request System digitalizes student medical services at Uva Wellassa University. I contributed by integrating the frontend with backend APIs and building UI features for profiles, prescriptions, and request updates to make the system simple and efficient."
+                "ICT Learning Platform – A MERN stack–based web application designed for Grade 6 to A/L students to access ICT lessons, videos, quizzes, and notes. Features secure authentication, responsive UI with Tailwind CSS, and structured content aligned with the Sri Lankan ICT syllabus."
         },
         {
             id: 3,
-            image: "medical-app.png",
-            title: "UWU Medical Web App",
+            image: "jobdemand.png",
+            title: "Job Market & Skill Demand Analysis",
+            link: "https://github.com/KavinduAshenSenarath/Job-Market-Skill-Demand-Analytics",
             Discription:
-                "This MERN-based Medical Request System digitalizes student medical services at Uva Wellassa University. I contributed by integrating the frontend with backend APIs and building UI features for profiles, prescriptions, and request updates to make the system simple and efficient."
+                "Python & PostgreSQL data analytics project that analyzes real-world job postings to identify in-demand skills, salary trends, and remote work opportunities with meaningful visual insights."
         }
 
     ];
@@ -64,9 +67,13 @@ function Projects() {
                         <p className="text-white text-[15px] text-center m-2">
                             {project.Discription}
                         </p>
-                        <button className="mb-8 mt-5 bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-full text-sm font-medium transition-colors duration-300">
+                        <a
+                            href={project.link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-block mb-8 mt-5 bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-full text-sm font-medium transition-colors duration-300">
                             Read More
-                        </button>
+                        </a>
                     </motion.div>
                 ))}
             </div>

@@ -1,7 +1,8 @@
 import { motion } from "framer-motion";
 
-function SocialIcon({ icon }) {
+function SocialIcon({ icon, link }) {
     return (
+
         <motion.a
             whileHover={{ scale: 1.2, rotate: 10 }}
             whileTap={{ scale: 0.9 }}
@@ -9,6 +10,9 @@ function SocialIcon({ icon }) {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.3 }}
             className="p-2 lg:p-4 rounded-full bg-gray-700 hover:bg-indigo-500 transition lg:text-4xl"
+            href={link}
+            target="_blank"
+            rel="noopener noreferrer"
         >
             {icon}
         </motion.a>

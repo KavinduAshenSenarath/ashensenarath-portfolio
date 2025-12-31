@@ -19,7 +19,7 @@ function About() {
                 Get to Know Me Better
             </h1>
 
-            <div className="space-y-4 mt-8 px-4 md:px-20 grid gap-2 lg:grid-cols-3">
+            <div className="space-y-4 mt-8 px-4 md:px-20 grid gap-2 lg:grid-cols-3 items-stretch ">
 
                 {/*EXPERIENCE*/}
                 <div className="bg-gray-900 rounded-2xl border border-gray-800 overflow-hidden lg:h-full">
@@ -42,19 +42,25 @@ function About() {
                     <div className={`transition-all duration-300 overflow-hidden ${expanded === "experience" ? "max-h-[1000px] opacity-100" : "max-h-0 opacity-0"} lg:max-h-full lg:opacity-100`}>
                         <div className="p-5 pt-0 border-t border-gray-800 space-y-4">
                             <div className="border-l-2 border-blue-500 pl-4">
-                                <h4 className="font-semibold text-lg text-white ">MERN Stack Developer</h4>
-                                <p className="text-blue-400 text-sm mb-2">Tech Company | 2022 - Present</p>
+                                <h4 className="font-semibold text-lg text-white ">Cashier</h4>
+                                <p className="text-blue-400 text-sm mb-2">Arpico Daily | 2022 </p>
                                 <p className="text-gray-400 text-sm">
-                                    Developing full-stack applications using MongoDB, Express, React, and Node.js.
-                                    Leading projects with modern development practices.
+                                    worked as a  Cashier at Arpico Daily, Kuliyapitiya branch, with experience in customer service, cash handling, and daily transaction management.
                                 </p>
                             </div>
 
                             <div className="border-l-2 border-blue-500 pl-4">
-                                <h4 className="font-semibold text-lg text-white ">Web Engineer</h4>
-                                <p className="text-blue-400 text-sm mb-2">Digital Agency | 2020 - 2022</p>
+                                <h4 className="font-semibold text-lg text-white ">Raigam Marketing Services(PVT)Ltd</h4>
+                                <p className="text-blue-400 text-sm mb-2">Chilaw Agency | 2023</p>
                                 <p className="text-gray-400 text-sm">
-                                    Built responsive websites and web applications. Collaborated closely with UI/UX designers.
+                                    Worked as a Marketing Representative at Raigam Marketing Services (PVT) Ltd in 2023, gaining experience in sales promotion, customer engagement, and market support activities.
+                                </p>
+                            </div>
+                            <div className="border-l-2 border-blue-500 pl-4">
+                                <h4 className="font-semibold text-lg text-white ">Suwanda Industries(PVT)Ltd</h4>
+                                <p className="text-blue-400 text-sm mb-2">Chilaw Agency | 2023</p>
+                                <p className="text-gray-400 text-sm">
+                                    Worked as a Sales Representative at Suwanda Industries (PVT) Ltd in 2023, gaining experience in customer relations, sales support, and field-level market operations.
                                 </p>
                             </div>
                         </div>
@@ -62,7 +68,7 @@ function About() {
                 </div>
 
                 {/*SKILLS*/}
-                <div className="bg-gray-900 rounded-2xl overflow-hidden border border-gray-800">
+                <div className="bg-gray-900 rounded-2xl overflow-hidden border border-gray-800 h-full flex flex-col">
                     <button
                         onClick={() => toggle("skills")}
                         className="w-full flex items-center justify-between p-5 hover:bg-gray-800/50 transition-all duration-300"
@@ -86,12 +92,15 @@ function About() {
                         <div className="p-5 pt-0 border-t border-gray-800 text-white space-y-3">
 
                             {[
-                                { skill: "React & Node.js", value: 92 },
-                                { skill: "JavaScript", value: 88 },
-                                { skill: "MongoDB & SQL", value: 85 },
-                                { skill: "UI/UX Design", value: 78 },
-                                { skill: "Express", value: 75 },
-                                { skill: "Machine Learning", value: 60 },
+                                { skill: "React & Node.js", value: 80 },
+                                { skill: "Tailwind CSS", value: 75 },
+                                { skill: "MongoDB", value: 70 },
+                                { skill: "python", value: 80 },
+                                { skill: "Basic Machine Learning Concepts", value: 65 },
+                                { skill: "Power BI", value: 60 },
+                                { skill: "PostgreSQL for Data Analysis", value: 80 },
+                                { skill: "Express js", value: 70 },
+                                { skill: "Git & GitHub", value: 75 },
 
                             ].map((item, index) => (
                                 <div key={index}>
@@ -114,7 +123,7 @@ function About() {
                 </div>
 
                 {/*EDUCATION*/}
-                <div className="bg-gray-900 rounded-2xl overflow-hidden border border-gray-800">
+                <div className="bg-gray-900 rounded-2xl overflow-hidden border border-gray-800 h-full flex flex-col ">
                     <button
                         onClick={() => toggle("education")}
                         className="w-full flex items-center justify-between p-5 hover:bg-gray-800/50 transition-all duration-300"
@@ -137,16 +146,16 @@ function About() {
                             } lg:max-h-full lg:opacity-100`}
                     >
                         <div className="p-5 pt-0 border-t border-gray-800 space-y-4">
-                            <div className="border-l-2 border-blue-500 pl-4">
-                                <h4 className="font-semibold text-white">Information and Communication Technology </h4>
-                                <p className="text-blue-400 text-sm mb-1">Uva Wellassa University of Srilanka </p>
-                                <p className="text-gray-400 text-xs">2023-2027</p>
+                            <div className="border-l-2 border-purple-500 pl-4">
+                                <h4 className="font-semibold text-white">G.C.E. Advanced Level (A/L) </h4>
+                                <p className="text-purple-400 text-sm mb-1">Saranath National College kuliyapitiya  </p>
+                                <p className="text-gray-400 text-xs">Completed</p>
                             </div>
 
                             <div className="border-l-2 border-purple-500 pl-4">
-                                <h4 className="font-semibold text-white">Full Stack Web Development</h4>
-                                <p className="text-purple-400 text-sm mb-1">Online Bootcamp</p>
-                                <p className="text-gray-400 text-xs">2021</p>
+                                <h4 className="font-semibold text-white">Information and Communication Technology</h4>
+                                <p className="text-purple-400 text-sm mb-1">Uva Wellassa University of Srilanka</p>
+                                <p className="text-gray-400 text-xs">2023-2027</p>
                             </div>
                         </div>
                     </div>

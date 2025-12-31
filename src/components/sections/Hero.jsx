@@ -103,9 +103,9 @@ function Hero() {
                     </motion.button>
 
                     <div className="flex justify-center lg:justify-start gap-4 mt-6 ">
-                        <SocialIcon icon={<Github />} />
-                        <SocialIcon icon={<Linkedin />} />
-                        <SocialIcon icon={<Twitter />} />
+                        <SocialIcon icon={<Github />} link="https://github.com/KavinduAshenSenarath" />
+                        <SocialIcon icon={<Linkedin />} link="https://www.linkedin.com/in/kavindu-ashen-senarath-1b3725325?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" />
+                        <SocialIcon icon={<Twitter />} link="" />
                     </div>
                 </div>
 

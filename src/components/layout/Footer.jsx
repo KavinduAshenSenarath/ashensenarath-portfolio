@@ -54,9 +54,9 @@ export default function Footer() {
                     <h2 className="text-white text-lg font-semibold">Follow Me</h2>
 
                     <div className="flex gap-4 lg:gap-5">
-                        <SocialIcon icon={<Github />} />
-                        <SocialIcon icon={<Linkedin />} />
-                        <SocialIcon icon={<Twitter />} />
+                        <SocialIcon icon={<Github />} link="https://github.com/KavinduAshenSenarath" />
+                        <SocialIcon icon={<Linkedin />} link="" />
+                        <SocialIcon icon={<Twitter />} link="" />
 
                     </div>
                 </div>
