@@ -33,7 +33,7 @@ function Hero() {
         },
         {
             src: "javalogo.svg",
-            className: "top-[85%] left-[8%] lg:top-[80%] lg:left-[28%]"
+            className: "top-[85%] left-[6%] lg:top-[80%] lg:left-[28%]"
         },
         {
             src: "powerbilogo.svg",
@@ -93,14 +93,17 @@ function Hero() {
                     <p className="text-gray-400 mb-6 lg:text-2xl">
                         Aspiring Business Intelligence Intern skilled in Power BI, Excel, and SQL, focused on turning data into insights. And foundation in MERN stack development.
                     </p>
-
-                    <motion.button
-                        whileHover={{ scale: 1.1 }}
-                        whileTap={{ scale: 0.95 }}
-                        className="px-6 py-2 border border-indigo-500 rounded-full hover:bg-indigo-600 transition lg:px-8 lg:py-4 lg:font-bold "
-                    >
-                        Download CV
-                    </motion.button>
+                    <a
+                        href="https://drive.google.com/file/d/1gZgWq1bHvTbUJsPq38_UZQwGvB1p1H59/view?usp=drive_link"
+                        target="_blank"
+                        rel="noopener noreferrer" >
+                        <motion.button
+                            whileHover={{ scale: 1.1 }}
+                            whileTap={{ scale: 0.95 }}
+                            className="px-6 py-2 border border-indigo-500 rounded-full hover:bg-indigo-600 transition lg:px-8 lg:py-4 lg:font-bold "
+                        >
+                            Download CV
+                        </motion.button> </a>
 
                     <div className="flex justify-center lg:justify-start gap-4 mt-6 ">
                         <SocialIcon icon={<Github />} link="https://github.com/KavinduAshenSenarath" />
