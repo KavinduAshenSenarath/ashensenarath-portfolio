@@ -5,7 +5,7 @@ function Services() {
     return (
 
         <section id="Services" className="min-h-screen bg-[#151925] py-16 px-4">
-            <h2 className="text-center text-2xl font-bold text-white mb-12 lg:text-4xl ">My <span className="text-indigo-400">service</span></h2>
+            <h2 className="text-center text-2xl font-bold text-white mb-12 lg:text-4xl mt-2 ">My <span className="text-indigo-400">service</span></h2>
             <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3 max-w-7xl mx-auto ">
                 <motion.div
                     initial={{ opacity: 0, y: 40 }}

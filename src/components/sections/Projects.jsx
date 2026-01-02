@@ -31,7 +31,7 @@ function Projects() {
 
     return (
         <section id="Projects" className="min-h-screen bg-[#151925] py-10">
-            <h2 className="text-white text-2xl text-center font-bold lg:text-4xl mb-12">
+            <h2 className="text-white text-2xl text-center font-bold lg:text-4xl mb-12 mt-4">
                 My <span className="text-indigo-400">Projects</span>
             </h2>
 

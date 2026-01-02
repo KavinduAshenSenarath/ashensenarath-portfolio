@@ -29,11 +29,11 @@ function Hero() {
     const techIcons = [
         {
             src: "pythonlogo.svg",
-            className: "top-[22%] left-[25%] lg:top-[18%] lg:left-[40%]"
+            className: "top-[24%] left-[21%] lg:top-[18%] lg:left-[40%]"
         },
         {
             src: "javalogo.svg",
-            className: "top-[85%] left-[17%] lg:top-[80%] lg:left-[28%]"
+            className: "top-[85%] left-[8%] lg:top-[80%] lg:left-[28%]"
         },
         {
             src: "powerbilogo.svg",
@@ -41,7 +41,7 @@ function Hero() {
         },
         {
             src: "reactlogo.svg",
-            className: "top-[95%] left-[70%] lg:top-[95%] lg:left-[85%]"
+            className: "top-[97%] left-[70%] lg:top-[95%] lg:left-[85%]"
         },
     ];
 
@@ -75,7 +75,7 @@ function Hero() {
             <div className="w-full flex flex-col-reverse lg:flex-row items-center justify-between gap-14">
 
                 {/* LEFT SIDE - TEXT */}
-                <div className="text-center lg:text-left text-white max-w-xl z-10">
+                <div className="text-center lg:text-left text-white max-w-xl z-10 lg:mt-4">
                     <p className="text-sm mb-2 lg:font-extrabold lg:text-2xl">Hello it’s Me</p>
 
                     <h1 className="text-3xl lg:text-5xl font-bold mb-2">
@@ -115,7 +115,7 @@ function Hero() {
                         initial={{ scale: 0, rotate: -30, opacity: 0 }}
                         animate={{ scale: 1, rotate: 0, opacity: 1 }}
                         transition={{ duration: 1.2, ease: "easeOut" }}
-                        className="absolute w-60 h-30 lg:w-95 lg:h-40 lg:mt-47 lg:rounded-full lg:rorate-20   bg-indigo-600 rounded-full rotate-20 z-0 mt-37 mb-50"
+                        className="absolute w-60 h-30 lg:w-95 lg:h-40 lg:mt-47 lg:rounded-full lg:rorate-20   bg-indigo-600 rounded-full rotate-20 z-0 mt-39 mb-50 "
                     />
                     {/*Tech icons  */}
                     {techIcons.map((icon, index) => (
@@ -135,7 +135,7 @@ function Hero() {
                     <img
                         src="/profic-m.png"
                         alt="Profile"
-                        className="w-64 lg:w-100 lg:mt-0 z-10 mt-10"
+                        className="w-64 lg:w-100 lg:mt-0 z-10 mt-12"
                     />
                 </div>
             </div>
